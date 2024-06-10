@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Piece from "../Piece/Piece";
 
 function Board({}) {
   const [currentBoard, setCurrentBoard] = useState({
@@ -197,8 +198,6 @@ function Board({}) {
         col: 5,
         color: "white",
         hasMoved: false,
-        //inCheck may or may not be necessary for the object to know
-        inCheck: false,
       },
       {
         type: "king",
@@ -206,16 +205,16 @@ function Board({}) {
         col: 5,
         color: "black",
         hasMoved: false,
-        //inCheck may or may not be necessary for the object to know
-        inCheck: false,
       },
     ],
   });
 
   return (
-    <>
-      <p>I'm a board!</p>
-    </>
+    <div className="board">
+      {currentBoard.pieces.map((piece) => {
+        return <Piece type={piece.type} color={piece.color} />;
+      })}
+    </div>
   );
 }
 
