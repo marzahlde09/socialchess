@@ -1,9 +1,18 @@
 import React from "react";
 
-function Piece({}) {
+type Props = {
+  type: string;
+  color: string;
+};
+
+function Piece(props: Props) {
   return (
     <>
-      <p>I'm a piece!</p>
+      <p>
+        I'm a {props.color} {props.type}!
+      </p>
     </>
   );
 }
+
+export default Piece;

@@ -1,4 +1,4 @@
-import Board from "../Board/Board";
+import Board from "../Board/Board.tsx";
 import "./App.css";
 
 function App() {
