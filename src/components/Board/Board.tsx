@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import Piece from "../Piece/Piece";
+import * as Piece from "../Piece/Piece";
+import "./Board.css";
 
 function Board({}) {
   const [currentBoard, setCurrentBoard] = useState({
@@ -212,7 +213,15 @@ function Board({}) {
   return (
     <div className="board">
       {currentBoard.pieces.map((piece) => {
-        return <Piece type={piece.type} color={piece.color} />;
+        switch (piece.type) {
+          case "queen":
+            return <Piece.Queen color={piece.color} />;
+            break;
+
+          default:
+            return <Piece.GenericPiece type={piece.type} color={piece.color} />;
+            break;
+        }
       })}
     </div>
   );

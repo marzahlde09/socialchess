@@ -1,11 +1,13 @@
 import React from "react";
+import blackQueen from "../../images/black-queen.webp";
+import whiteQueen from "../../images/white-queen.webp";
 
 type Props = {
-  type: string;
+  type?: string;
   color: string;
 };
 
-function Piece(props: Props) {
+export function GenericPiece(props: Props) {
   return (
     <>
       <p>
@@ -15,4 +17,14 @@ function Piece(props: Props) {
   );
 }
 
-export default Piece;
+export function Queen(props: Props) {
+  return (
+    <>
+      {props.color === "white" ? (
+        <img src={whiteQueen} />
+      ) : (
+        <img src={blackQueen} />
+      )}
+    </>
+  );
+}
