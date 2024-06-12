@@ -1,30 +1,32 @@
-import React from "react";
-import blackQueen from "../../images/black-queen.webp";
-import whiteQueen from "../../images/white-queen.webp";
+import React, { useEffect, useState } from "react";
+import "./Piece.css";
 
 type Props = {
-  type?: string;
+  type: string;
   color: string;
 };
 
-export function GenericPiece(props: Props) {
+function Piece(props: Props) {
+  const [isActive, setIsActive] = useState(false);
+  const [className, setClassName] = useState(
+    `${props.color}-${props.type}-${isActive ? "active" : "inactive"}`
+  );
+
+  const selectPiece = () => {
+    setIsActive(!isActive);
+  };
+
+  useEffect(() => {
+    setClassName(
+      `${props.color}-${props.type}-${isActive ? "active" : "inactive"}`
+    );
+  }, [isActive]);
+
   return (
     <>
-      <p>
-        I'm a {props.color} {props.type}!
-      </p>
+      <button className={className} onClick={selectPiece}></button>
     </>
   );
 }
 
-export function Queen(props: Props) {
-  return (
-    <>
-      {props.color === "white" ? (
-        <img src={whiteQueen} />
-      ) : (
-        <img src={blackQueen} />
-      )}
-    </>
-  );
-}
+export default Piece;
