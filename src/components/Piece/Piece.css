@@ -1,0 +1,27 @@
+.black-queen-active {
+  height: 200px;
+  width: 200px;
+  background: url("../../images/black-queen.webp"), #00ff00;
+  background-size: cover;
+}
+
+.black-queen-inactive {
+  height: 200px;
+  width: 200px;
+  background: url("../../images/black-queen.webp"), #aaaaaa;
+  background-size: cover;
+}
+
+.white-queen-active {
+  height: 200px;
+  width: 200px;
+  background: url("../../images/white-queen.webp"), #00ff00;
+  background-size: cover;
+}
+
+.white-queen-inactive {
+  height: 200px;
+  width: 200px;
+  background: url("../../images/white-queen.webp"), #aaaaaa;
+  background-size: cover;
+}
