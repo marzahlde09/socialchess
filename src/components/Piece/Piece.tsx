@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Piece.css";
+import cx from "classnames";
 
 type Props = {
   type: string;
@@ -24,7 +25,13 @@ function Piece(props: Props) {
 
   return (
     <>
-      <button className={className} onClick={selectPiece}></button>
+      <button
+        className={cx(
+          className,
+          `w-[6vw] h-[6vw] border border-solid border-black box-content`
+        )}
+        onClick={selectPiece}
+      ></button>
     </>
   );
 }
