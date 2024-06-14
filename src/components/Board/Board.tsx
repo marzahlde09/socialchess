@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Piece from "../Piece/Piece";
-import "./Board.css";
 
 function Board({}) {
   const [currentBoard, setCurrentBoard] = useState({
@@ -211,7 +210,7 @@ function Board({}) {
   });
 
   return (
-    <div className="board">
+    <div className="grid grid-cols-8 grid-rows-8 w-[48vw] m-auto">
       {currentBoard.pieces.map((piece) => {
         return <Piece type={piece.type} color={piece.color} />;
       })}

@@ -1,27 +1,143 @@
 .black-queen-active {
-  height: 200px;
-  width: 200px;
   background: url("../../images/black-queen.webp"), #00ff00;
   background-size: cover;
+  background-position: center;
 }
 
 .black-queen-inactive {
-  height: 200px;
-  width: 200px;
   background: url("../../images/black-queen.webp"), #aaaaaa;
   background-size: cover;
+  background-position: center;
 }
 
 .white-queen-active {
-  height: 200px;
-  width: 200px;
   background: url("../../images/white-queen.webp"), #00ff00;
   background-size: cover;
+  background-position: center;
 }
 
 .white-queen-inactive {
-  height: 200px;
-  width: 200px;
   background: url("../../images/white-queen.webp"), #aaaaaa;
   background-size: cover;
+  background-position: center;
+}
+
+.black-pawn-active {
+  background: url("../../images/black-pawn.webp"), #00ff00;
+  background-size: cover;
+  background-position: center;
+}
+
+.black-pawn-inactive {
+  background: url("../../images/black-pawn.webp"), #aaaaaa;
+  background-size: cover;
+  background-position: center;
+}
+
+.white-pawn-active {
+  background: url("../../images/white-pawn.webp"), #00ff00;
+  background-size: cover;
+  background-position: center;
+}
+
+.white-pawn-inactive {
+  background: url("../../images/white-pawn.webp"), #aaaaaa;
+  background-size: cover;
+  background-position: center;
+}
+
+.black-knight-active {
+  background: url("../../images/black-knight.webp"), #00ff00;
+  background-size: cover;
+  background-position: center;
+}
+
+.black-knight-inactive {
+  background: url("../../images/black-knight.webp"), #aaaaaa;
+  background-size: cover;
+  background-position: center;
+}
+
+.white-knight-active {
+  background: url("../../images/white-knight.webp"), #00ff00;
+  background-size: cover;
+  background-position: center;
+}
+
+.white-knight-inactive {
+  background: url("../../images/white-knight.webp"), #aaaaaa;
+  background-size: cover;
+  background-position: center;
+}
+
+.black-rook-active {
+  background: url("../../images/black-rook.webp"), #00ff00;
+  background-size: cover;
+  background-position: center;
+}
+
+.black-rook-inactive {
+  background: url("../../images/black-rook.webp"), #aaaaaa;
+  background-size: cover;
+  background-position: center;
+}
+
+.white-rook-active {
+  background: url("../../images/white-rook.webp"), #00ff00;
+  background-size: cover;
+  background-position: center;
+}
+
+.white-rook-inactive {
+  background: url("../../images/white-rook.webp"), #aaaaaa;
+  background-size: cover;
+  background-position: center;
+}
+
+.black-king-active {
+  background: url("../../images/black-king.webp"), #00ff00;
+  background-size: cover;
+  background-position: center;
+}
+
+.black-king-inactive {
+  background: url("../../images/black-king.webp"), #aaaaaa;
+  background-size: cover;
+  background-position: center;
+}
+
+.white-king-active {
+  background: url("../../images/white-king.webp"), #00ff00;
+  background-size: cover;
+  background-position: center;
+}
+
+.white-king-inactive {
+  background: url("../../images/white-king.webp"), #aaaaaa;
+  background-size: cover;
+  background-position: center;
+}
+
+.black-bishop-active {
+  background: url("../../images/black-bishop.webp"), #00ff00;
+  background-size: cover;
+  background-position: center;
+}
+
+.black-bishop-inactive {
+  background: url("../../images/black-bishop.webp"), #aaaaaa;
+  background-size: cover;
+  background-position: center;
+}
+
+.white-bishop-active {
+  background: url("../../images/white-bishop.webp"), #00ff00;
+  background-size: cover;
+  background-position: center;
+}
+
+.white-bishop-inactive {
+  background: url("../../images/white-bishop.webp"), #aaaaaa;
+  background-size: cover;
+  background-position: center;
 }
