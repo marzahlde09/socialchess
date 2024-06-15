@@ -141,3 +141,9 @@
   background-size: cover;
   background-position: center;
 }
+
+.white-bishop-inactive-even {
+  background: url("../../images/white-bishop.webp"), #777777;
+  background-size: cover;
+  background-position: center;
+}
